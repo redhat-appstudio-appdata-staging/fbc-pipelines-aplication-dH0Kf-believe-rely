@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: fbc-pipelines-component
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/dev-release-team-tenant/fbc-pipelines-aplication/fbc-pipelines-component@sha256:acce02976d2f26923ffe88f2864c56c8448a2965557601951fbfd07da87d9cd7
+        name: fbc
+        resources: {}
+status: {}
